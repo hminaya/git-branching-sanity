@@ -56,7 +56,24 @@ git status
 git push origin name_of_branch_i_am_working_on
 ```
 
-## Checkout a branch that has been pushed to origin by someone else
+## Pull/Checkout a branch from origin (is __already__ on your machine)
+*make sure you are located in the branch you want to push, then proceed*
+*run git status to see if you have any pending changes on your current branch*
+```git
+git status
+```
+*if you have any pending changes you must stage and commit them or discard/stash them*
+```git
+git add .
+git commit --all -m "Some of my changes"
+git push origin name_of_branch_i_am_working_on
+```
+*now that you have no pending changes you can fetch and checkout your new branch, if you checkout with un-staged files it will mess up your branch*
+```git
+git checkout name_of_branch_i_want_to_get
+```
+
+## Pull/Checkout a branch from origin (is __not__ on your machine)
 *run git status to see if you have any pending changes on your current branch*
 ```git
 git status
