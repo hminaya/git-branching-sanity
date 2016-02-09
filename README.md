@@ -74,7 +74,7 @@ git checkout name_of_feature_branch
 ```
 
 ## Generate a Pull Request
-Depending on the branch type you are using your *target_branch* will be different
+Depending on the branch type you are using your *source_branch* and *target_branch* will be different
 
 Source | Target
 -------|-------
@@ -88,7 +88,7 @@ feature_branch | develop
 git status
 git add .
 git commit --all -m "Some of my changes"
-git push origin 0000_0000_name_of_feature
+git push origin source_branch
 ```
 
 *next, switch to the branch you are targeting and pull*
@@ -97,13 +97,7 @@ git checkout target_branch
 git pull origin target_branch
 ```
 
-*next, switch to the branch you are targeting and pull*
-```git
-git checkout target_branch
-git pull origin target_branch
-```
-
-*go back to your __source__ branch and merge with your __target__ branch*
+*go back to your __source_branch__  and merge with your __target_branch__*
 ```git
 git checkout source_branch
 git merge target_branch
