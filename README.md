@@ -65,12 +65,12 @@ git status
 ```git
 git add .
 git commit --all -m "Some of my changes"
-git push origin 0000_0000_name_of_feature
+git push origin name_of_branch_i_am_working_on
 ```
 *now that you have no pending changes you can fetch and checkout your new branch*
 ```git
 git fetch origin
-git checkout name_of_feature_branch
+git checkout name_of_branch_i_want_to_get
 ```
 
 ## Generate a Pull Request
