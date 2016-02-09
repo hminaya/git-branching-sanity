@@ -3,9 +3,9 @@ Some simple steps to keep you from loosing your mind when branching. This is all
 
 ## Main (fixed) branches
 These have fixed names
-* __master__ - Contains what is running in production, it only gets updated when a deployment is about to occur
+* __master__ - Contains what is running in production, it only gets updated when a deployment is about to occur. No work should ever be done directly in this branch. 
 * __qa__ - TBD
-* __develop__ - It's branched off from Master and contains what has been tested/reviewed and is ready to be deployed
+* __develop__ - It's branched off from Master and contains what has been tested/reviewed and is ready to be deployed. No work should be done directly in this branch.
 
 ## Hotfix branches
 Hotfix branches come from the *master* branch. They enable you to fix an urgent issue that has arisen from a recent deployment or a bug in production that cannot wait for the *develop* branch to be ready.
@@ -15,7 +15,7 @@ They should be named after the issue/ticket you are fixing and contain *hotfix* 
 ```git
 hotfix_8569_webservices_bug
 ```
-To create a hotfix branch:
+__Create a hotfix branch__
 ```git
 git checkout -b hotfix_000_name master
 ```
