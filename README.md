@@ -76,7 +76,8 @@ git checkout name_of_feature_branch
 ## Generate a Pull Request
 Depending on the branch type you are using your *target_branch* will be different
 
-__Source | Target__
+Source | Target
+-------|-------
 develop | master
 qa | tbd
 hot_fix | master
