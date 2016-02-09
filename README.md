@@ -56,7 +56,23 @@ git status
 git push origin name_of_branch_i_am_working_on
 ```
 
-## Pull/Checkout a branch from origin (is __already__ on your machine)
+## Update an existing branch
+*you must be located in the branch you are going to update, if not then you need to commit any pending changes and switch to the branch you want to update*
+
+```git
+git status
+git add .
+git commit --all -m "Some of my changes"
+git push origin name_of_branch_i_am_working_on
+```
+
+*now that you have staged/committed your pending changes, you can proceed*
+```git
+git checkout name_of_branch_i_want_to_update
+git pull origin name_of_branch_i_want_to_update
+```
+
+## Checkout a branch that is already on your machine
 *run git status to see if you have any pending changes on your current branch*
 ```git
 git status
@@ -67,12 +83,12 @@ git add .
 git commit --all -m "Some of my changes"
 git push origin name_of_branch_i_am_working_on
 ```
-*now that you have no pending changes you can fetch and checkout your new branch, if you checkout with un-staged files __it will mess up your branch__*
+*now that you have no pending changes you can fetch and checkout your branch, if you checkout with un-staged files __it will mess up your branch__*
 ```git
 git checkout name_of_branch_i_want
 ```
 
-## Pull/Checkout a branch from origin (is __not__ on your machine)
+## Checkout a branch that is __not__ on your machine
 *run git status to see if you have any pending changes on your current branch*
 ```git
 git status
@@ -83,7 +99,7 @@ git add .
 git commit --all -m "Some of my changes"
 git push origin name_of_branch_i_am_working_on
 ```
-*now that you have no pending changes you can fetch and checkout your new branch*
+*now that you have no pending changes you can fetch and checkout your __new__ branch*
 ```git
 git fetch origin
 git checkout name_of_branch_i_want_to_get
