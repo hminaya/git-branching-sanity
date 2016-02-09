@@ -46,14 +46,14 @@ sign_up_wizard_changes
 
 __Create a feature branch__
 ```git
-git checkout -b 0000_0000_name_of_feature develop
+git checkout -b 0000_0000_name_of_feature_branch develop
 ```
 
 ## Push a branch back to origin
 *make sure you are located in the branch you want to push, then proceed*
 ```git
 git status
-git push origin name_of_feature
+git push origin name_of_branch_i_am_working_on
 ```
 
 ## Checkout a branch that has been pushed to origin by someone else
