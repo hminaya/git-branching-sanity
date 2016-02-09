@@ -76,11 +76,11 @@ git checkout name_of_feature_branch
 ## Generate a Pull Request
 Depending on the branch type you are using your *target_branch* will be different
 
-__Source - Target__
-* develop - master
-* qa - tbd
-* hot_fix - master
-* feature_branch - develop
+__Source | Target__
+develop | master
+qa | tbd
+hot_fix | master
+feature_branch | develop
 
 *make sure you have no pending changes, and commit them if you do*
 ```git
@@ -109,7 +109,8 @@ git merge target_branch
 ```
 
 *if you have any conflicts, fix them*
-Go get coffee
+
+Go get :coffee:
 
 *when there are no conflicts, then stage any changes, commit and push*
 ```git
