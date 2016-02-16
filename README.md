@@ -105,6 +105,20 @@ git fetch origin
 git checkout name_of_branch_i_want_to_get
 ```
 
+## Delete a __local__ branch
+*make sure you are not on that branch and execute*
+```git
+git status
+git branch -D name_of_local_branch_i_want_to_delete
+```
+
+## Delete a __remote__ branch
+*make sure you are not on that branch and execute*
+```git
+git status
+git push origin --delete name_of_remote_branch_i_want_to_delete
+```
+
 ## Generate a Pull Request
 Depending on the branch type you are using your *source_branch* and *target_branch* will be different
 
